@@ -1,0 +1,64 @@
+{
+  "documentEntryHead" : {
+    "entryName" : "ComscoreDataStore_0.json",
+    "numRecords" : 7
+  },
+  "data" : {
+    "stb6|the hobbit|2014-04-02" : {
+      "STB" : "stb6",
+      "TITLE" : "the hobbit",
+      "DATE" : "2014-04-02",
+      "REV" : 8.0,
+      "VIEW_TIME" : "2:45",
+      "PROVIDER" : "warner bros"
+    },
+    "stb8|the matrix|2014-04-02" : {
+      "STB" : "stb8",
+      "TITLE" : "the matrix",
+      "DATE" : "2014-04-02",
+      "REV" : 4.0,
+      "VIEW_TIME" : "1:05",
+      "PROVIDER" : "warner bros"
+    },
+    "stb1|the matrix|2014-04-01" : {
+      "STB" : "stb1",
+      "TITLE" : "the matrix",
+      "DATE" : "2014-04-01",
+      "REV" : 4.0,
+      "VIEW_TIME" : "1:30",
+      "PROVIDER" : "warner bros"
+    },
+    "stb1|unbreakable|2014-04-03" : {
+      "STB" : "stb1",
+      "TITLE" : "unbreakable",
+      "DATE" : "2014-04-03",
+      "REV" : 6.0,
+      "VIEW_TIME" : "2:05",
+      "PROVIDER" : "buena vista"
+    },
+    "stb3|the matrix|2014-04-02" : {
+      "STB" : "stb3",
+      "TITLE" : "the matrix",
+      "DATE" : "2014-04-02",
+      "REV" : 4.0,
+      "VIEW_TIME" : "1:05",
+      "PROVIDER" : "warner bros"
+    },
+    "stb5|unbreakable|2014-04-03" : {
+      "STB" : "stb5",
+      "TITLE" : "unbreakable",
+      "DATE" : "2014-04-03",
+      "REV" : 6.0,
+      "VIEW_TIME" : "2:05",
+      "PROVIDER" : "buena vista"
+    },
+    "stb2|the hobbit|2014-04-02" : {
+      "STB" : "stb2",
+      "TITLE" : "the hobbit",
+      "DATE" : "2014-04-02",
+      "REV" : 8.0,
+      "VIEW_TIME" : "2:45",
+      "PROVIDER" : "warner bros"
+    }
+  }
+}
