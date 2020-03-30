@@ -5,7 +5,48 @@
 
 A simple data store json. 
 
+```
+The structure of datastore : 
+ - Data format Json 
 
+A datastore is composed by :
+ 1/ A json file index = NameDataStoreIndex.json. 
+ 2/ N files dataEntry, each dataEntry has a limit capacity of storage of record.
+
+ DataStore index file : this file contains the information related to data entry and record
+   - name of latest/active data entry
+   - a map with key is a hascode of each record and value is the name of data entry where the record is store
+ 
+ DataStore entry :  
+   - Header contains name of entry and number of records in this entry
+   - Records - data 
+
+DataStore operations: 
+  - When connected only 2 files :
+      - Index file and 
+      - latest entry 
+    are loaded in memory. This helps  to avoid loading whole datastore in memory.
+
+  - Insert a new record
+     - look up this record in data index first use hashcode of this record
+     - key exist ==> locate data entry then replace this record
+     - key non exist ==> insert this record in current/latest data entry
+     - when data entry is full a new one is created.
+
+  - Select by criteria
+     - load each data entry and select the records that meet the criteria
+
+  - Order records by field
+     - use comparator on each field of record
+     - use chain comparators on multi feilds
+ -  Filter 
+     - use stream function to acheive the operation with predicate
+
+ -  Group and agregate functions 
+    - use stream java function to archive these function
+
+    
+```
 
 ### Prerequisites
 

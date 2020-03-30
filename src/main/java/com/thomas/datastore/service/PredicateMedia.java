@@ -38,7 +38,7 @@ public class PredicateMedia {
 		Predicate<MediaRecord> filterByViewTime = r -> r.getViewTime().equals(value);
 		Predicate<MediaRecord> filterByProvider = r -> r.getProvider().equals(value);
 		
-		//// Initialize map of comparators 
+		//// Initialize map of filter
 		
 		this.mapPredicate.put("STB", filterByStb);
 		
