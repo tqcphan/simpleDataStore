@@ -30,8 +30,15 @@ public class DatastoreApplication {
 
 	public static void main(String[] args) {
 		
+		if(args.length == 0)
+	    {
+	        System.out.println(" Let's use - java -jar datastore-0.0.1-SNAPSHOT.jar import ");
+	        System.exit(0);
+	    }
+		
+		
 		ImportCommand importCommand = new ImportCommand();
-	     QueryCommand queryCommand = new QueryCommand();
+	    QueryCommand queryCommand = new QueryCommand();
 		JCommander importCommander =  JCommander.newBuilder()
 				.addCommand(importCommand)
 				.addCommand(queryCommand).build();		
